@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100..900&display=swap');
+/*BASE STYLES AND FONTS*/
+
+:root{
+  --Nutmeg: hsl(14, 45%, 36%);
+--Dark-Raspberry: hsl(332, 51%, 32%);
+}
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+body{
+  font-family: "Exo 2", sans-serif;
+}
+
+div .container{
+  max-width: 780px;
+  margin:0 auto 0 auto;
+}
+
+main .container{
+  margin:0 auto 0 auto;
+  position:relative;
+  height:100vh;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  align-content:center;
+  overflow:hidden;
+}
+
+/*GLOBAL/DEFAULT STYLES FOR ALL CLASSES*/
+.recipe-ingredients,.recipe-preparations, .recipe-description, .recipe-methods-section, .recipe-nutrition-section, .recipe-intro-section{
+  display:flex;
+  flex-direction:column;
+  gap:1.3rem;
+}
+.recipe-description,.recipe-preparations,.recipe-ingredients,.recipe-methods-section,.recipe-nutrition-section{
+  margin-left:2rem;
+}
+
+.recipe-ingredients h1,li::marker, .recipe-methods-section h1, .recipe-nutrition-section h1,.recipe-nutrition-section td:nth-child(even){
+  color:var(--Nutmeg);
+}
+span, .recipe-nutrition-section td:nth-child(even){
+  font-weight:700;
+}
+
+/*STYLES FOR THE IMAGE*/
+.recipe-image{
+  width:100%;
+  margin-bottom:1.5rem;
+  margin-top:1.5rem;
+}
+
+.recipe-image img{
+  width:100%;
+  object-fit:contain;
+  border:solid 2px transparent;
+  border-radius:10px;
+}
+
+/*STYLES FOR THE PREPARATION SECTION*/
+.recipe-preparations{
+  background:rgba(243, 118, 215, 0.22);
+  background-origin:border-box;
+  padding:20px;
+  border:solid 2px transparent;
+  border-radius:8px;
+}
+.recipe-preparations ul{
+  margin-left:2rem;
+}
+.recipe-preparations li{
+  margin-bottom:1rem;
+}
+.recipe-preparations li::marker{
+  color:black;
+}
+
+
+/*STYLES FOR INGRIDIENTS*/
+.recipe-ingredients ul{
+  margin-left:1.8rem;
+  display:flex;
+  flex-direction:column;
+  gap:1rem;
+}
+
+/*STYLES FOR INSTRUCTIONS SECTIONS*/
+.recipe-methods-section ol{
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  gap:1rem;
+}
+
+/*STYLES FOR NUTRITION SECTION*/
+.recipe-nutrition-section table{
+text-align:center;
+border-collapse:collapse;
+width:100%;
+}
+.recipe-nutrition-section td{
+  border-bottom:1px solid #ddd;
+  padding:8px;
+}
+
+@media screen and(){
+  
+}
+
+
+
+
